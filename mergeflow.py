@@ -112,7 +112,7 @@ for row in excel_rows:
     cells.append(row[3][8:])
     cells.append(row[4])
     cells.append(row[5][18:])
-    cells.append('https://gitlab.infra.aws.carestack.com/' + row[5][18:].replace('!', '/-/merge_requests/', 1))
+    cells.append('<write domain>' + row[5][18:].replace('!', '/-/merge_requests/', 1))
     worksheet.append(cells)
 workBookName = '_'.join(workBookName)
 workBookName = workBookName.replace('/','_')
